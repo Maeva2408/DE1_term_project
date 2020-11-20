@@ -14,7 +14,7 @@ I decided to import them as string and then find a way to convert them.
 
 ## ERR Diagram 
 
-![picture alt](https://github.com/Maeva2408/DE1_term_project/blob/main/ERR_Diagram_kills_data.png "ERR Diagram - Police Killing in US in 2015 ")
+![picture alt]( "ERR Diagram - Police Killing in US in 2015 ")
 
 
 ## Analytics
