@@ -2,20 +2,19 @@
 Maeva Braeckevelt-Term_project-DE1
 # Analytic plan #
 
-I choose three data table : The first one is about the number of killings in USA by the police in 2015, I have a lot of variable like state, sex, race, age etc.
-The second one is about the median income in every state of USA.
-The last one is about the homicide rate by state.
+I choose three data tables from Kaggle : the first one is about the killings in USA by the police in 2015, I have a lot of variable like state, sex, race, age etc.
+The second one is about the median income in every state of USA for 2015.
+The last one is about the homicide rate by state in 2015.
 
 ## Importing the data
 
 I ran into some difficulties when I was importing the data.
-One of them was that the date was in European format so when I imported it as date it was wrong.
-I decided to import them as string and then find a way to convert them.
+One of them was the date, it was in European format so when I imported it it was reversed.
+So,I decided to import it as a string and then find a way to convert it.
 
 ## ERR Diagram 
 
-![picture alt]( https://github.com/Maeva2408/DE1_term_project/blob/main/ERR_Diagram_kills_data.png" ERR Diagram - Police Killing in US in 2015 ")
-
+![picture alt](https://github.com/Maeva2408/DE1_term_project/blob/main/ERR_Diagram_kills_data.png "ERR Diagram - Police Killing in US in 201")
 
 ## Analytics
 
@@ -43,6 +42,23 @@ Dimension  | Race
 Dimension  | Date (Month)
 
 
+## Stored Procedure and Trigger
+
+I did my stored procedure to create a data store with those variable. 
+
+
+
+
+
+
+
+
+
+
+
+I add a trigger and I test it.
+
+## Views
 
 
 
