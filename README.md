@@ -25,12 +25,12 @@ I would like to prepare my data for analysis so I will do a stored procedure to 
 
 Here the questions I would like to start with :
 
-*Whether the context of the killing (race,state,etc) were random or if we can uncover some pattern?
-*Are more men kill than women?
-*Is there a seasonality (month, week, holidays) with regards to increase killings?
-*Are there more killings in poorer states?
-*Are there more killings in states with higher homicide rates?
-*Do the killings uncnover racial profiling?
+* Whether the context of the killing (race,state,etc) were random or if we can uncover some pattern?
+* Are more men kill than women?
+* Is there a seasonality (month, week, holidays) with regards to increase killings?
+* Are there more killings in poorer states?
+* Are there more killings in states with higher homicide rates?
+* Do the killings uncnover racial profiling?
 
 To answer those questions I need to create a data store with the dimensions I need.
 
