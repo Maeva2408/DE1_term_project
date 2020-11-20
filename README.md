@@ -17,7 +17,7 @@ So, I decided to import it as a string and then find a way to convert it.
 I create my ERR Diagram :
 ![picture alt](https://github.com/Maeva2408/DE1_term_project/blob/main/ERR_Diagram_kills_data.png "ERR Diagram - Police Killing in US in 201")
 
-I can see that State will be a easy way to join the three table together.
+I can see that State will be a easy way to join the threes table together.
 
 ## Analytics
 
@@ -59,12 +59,19 @@ Here is the part of the code:
 
 `case 
 when homicide_rate > avg(homicide_rate) OVER () then 'High_homicide_rate'
+
 when homicide_rate < avg(homicide_rate) OVER () then 'low_homicide_rate'
+
 end as 'Homicide_rate_Cat',
+
 median_income,
+
 case
+
 when median_income > avg(median_income) over () then 'Rich_state'
+
 when median_income < avg(median_income) over () then 'Poor_state' 
+
 end as 'State_income_cat'`
 
 ## Conclusion
