@@ -22,6 +22,7 @@ I can see that State will be a easy way to join the three table together.
 ## Analytics
 
 I would like to prepare my data for analysis so I will do a stored procedure to create ma data store.
+
 Here the questions I would like to start with :
 
 *Whether the context of the killing (race,state,etc) were random or if we can uncover some pattern?
@@ -54,7 +55,8 @@ I did five views to lay foundations for future analysis aim to answer the five q
 To facilitate the comparaison between state for the income and the homicide rate:
 I decided to calculate the average of all states and I qualified it either Rich or poor if they were higher or lower than the average.
 I did the same for the Homicide rate.
-Here is the part of the code 
+Here is the part of the code:
+
 `case 
 when homicide_rate > avg(homicide_rate) OVER () then 'High_homicide_rate'
 when homicide_rate < avg(homicide_rate) OVER () then 'low_homicide_rate'
