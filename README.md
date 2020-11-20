@@ -14,7 +14,7 @@ I decided to import them as string and then find a way to convert them.
 
 ## ERR Diagram 
 
-![picture alt]( "ERR Diagram - Police Killing in US in 2015 ")
+![picture alt]( https://github.com/Maeva2408/DE1_term_project/blob/main/ERR_Diagram_kills_data.png" ERR Diagram - Police Killing in US in 2015 ")
 
 
 ## Analytics
@@ -32,10 +32,17 @@ Here the questions I would like to start with :
 To answer those questions I need to create a new table with the dimensions I need.
 Dimension chosen : ID, Date (month), State, Homicide_rate, Median_income, race and gender
 
-First Header  | Second Header
+Class | Measure
 ------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+Fact  | Kills
+Dimension  | State
+Dimension  | Gender
+Dimension  | Median Income
+Dimension  | Rate Homicide
+Dimension  | Race
+Dimension  | Date (Month)
+
+
 
 
 
