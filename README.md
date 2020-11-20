@@ -33,7 +33,7 @@ To answer those questions I need to create a new table with the dimensions I nee
 Dimension chosen : ID, Date (month), State, Homicide_rate, Median_income, race and gender
 
 Class | Measure
-------------- | -------------
+----- | -------------
 Fact  | Kills
 Dimension  | State
 Dimension  | Gender
