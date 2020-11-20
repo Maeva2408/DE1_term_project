@@ -57,7 +57,8 @@ I decided to calculate the average of all states and I qualified it either Rich 
 I did the same for the Homicide rate.
 Here is the part of the code:
 
-`case 
+```
+case 
 when homicide_rate > avg(homicide_rate) OVER () then 'High_homicide_rate'
 when homicide_rate < avg(homicide_rate) OVER () then 'low_homicide_rate'
 end as 'Homicide_rate_Cat',
@@ -65,7 +66,8 @@ median_income,
 case
 when median_income > avg(median_income) over () then 'Rich_state'
 when median_income < avg(median_income) over () then 'Poor_state' 
-end as 'State_income_cat'`
+end as 'State_income_cat'
+```
 
 ## Conclusion
 I really enjoyed working on this project. It helps me to see the big picture. Starting with the operational layer: I import, load and clean the data.
