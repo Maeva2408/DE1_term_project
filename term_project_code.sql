@@ -267,8 +267,8 @@ order by total_kills desc;
 select * from state_income_vs_rate_homicide;
 --
 use stored_police_killing_us;
-drop view if exists state_income_vs_rate_homecide_vs_gender;
-create view state_income_vs_rate_homecide_vs_gender as
+drop view if exists state_income_vs_rate_homicide_vs_gender;
+create view state_income_vs_rate_homicide_vs_gender as
 select gender,count(kills_id) as Total_kills, state, homicide_rate, 
 case 
 when homicide_rate > avg(homicide_rate) OVER () then 'High_homicide_rate'
@@ -283,5 +283,5 @@ from stored_police_killing_us
 group by state, gender
 order by state asc;
 
-select * from state_income_vs_rate_homecide_vs_gender;
+select * from state_income_vs_rate_homicide_vs_gender;
 
