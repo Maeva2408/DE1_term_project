@@ -189,13 +189,12 @@ VALUES('1', 'John Doe', '22-01-2015', 'shot', 'gun', '30', 'M', 'A', 'Shelton', 
 select * from messages;
 Select * from stored_police_killing_us
 where kills_id = 1;
+
 ----------- I will delete it to not alter the data
 delete from police_killing_us
 where id =1;
 delete from stored_police_killing_us
 where kills_id =1;
-
-
 
 ----------- DATA MART : I will creat some views to define sections of the datastore police_killing_us_data useful for the analysis
 -- View 1: Kills vs Gender
@@ -232,7 +231,6 @@ order by Total_kills desc;
 
 select * from Kills_vs_Race;
 
-
 -- View 3: Kills vs Month
 drop view if exists Kills_vs_Month;
 create view Kills_vs_Month as
@@ -261,6 +259,7 @@ group by state
 order by total_kills desc;
 
 select * from state_income_vs_rate_homicide;
+
 -- View 5 : State_income vs rate_homicide vs gender
 drop view if exists state_income_vs_rate_homicide_vs_gender;
 create view state_income_vs_rate_homicide_vs_gender as
