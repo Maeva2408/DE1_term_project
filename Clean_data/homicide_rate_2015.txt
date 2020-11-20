@@ -1,0 +1,51 @@
+﻿Rank_Homicide_per_100000hab;State_name;state;year_2015
+1; Louisiana;LA;11.3
+2; Missouri;MO;8.2
+3; Maryland;MD;7.7
+4; Mississippi;MS;7.5
+5; Nevada;NV;7.45
+6; Alabama;AL;7.15
+7; Alaska;AK;7.00
+8; South Carolina;SC;7.00
+9; Arkansas;AR;6.95
+10; Tennessee;TN;6.85
+11; Virginia;VA;6.55
+12; Illinois;IL;6.5
+13;Georgia;GA;6.3
+14; New Mexico;NM;5.85
+15; Indiana;IN;5.6
+16; North Carolina;NC;5.6
+17; Michigan;MI;5.55
+18; Delaware;DE;5.55
+19; Florida;FL;5.4
+20; Arizona;AZ;5.35
+21; Oklahoma;OK;5.35
+22; Pennsylvania;PA;5.3
+23; Ohio;OH;5.2
+24; Kentucky;KY;4.75
+25; Texas;TX;4.7
+26; West Virginia;WV;4.7
+27; California;CA;4.5
+28; Kansas;KS;3.85
+29; Montana;MT;3.75
+30; New Jersey;NJ;3.75
+31; Colorado;CO;3.4
+32; Wisconsin;WI;3.1
+33; New York;NY;2.95
+34; Washington;WA;2.75
+35; South Dakota;SD;2.7
+36; Connecticut;CT;2.65
+37; Nebraska;NE;2.55
+38; Wyoming;WY;2.55
+39; Iowa;IA;2.5
+40; Utah;UT;2.35
+41; Hawaii;HI;2.25
+42; Massachusetts;MA;2.25
+43; Oregon;OR;2.25
+44; Idaho;ID;2.2
+45; Rhode Island;RI;2.2
+46; Vermont;VT;2.15
+47; North Dakota;ND;2.15
+48; Minnesota;MN;1.8
+49; Maine;ME;1.65
+50; New Hampshire;NH;0.95
