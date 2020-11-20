@@ -17,7 +17,7 @@ So, I decided to import it as a string and then find a way to convert it.
 I create my ERR Diagram :
 ![picture alt](https://github.com/Maeva2408/DE1_term_project/blob/main/ERR_Diagram_kills_data.png "ERR Diagram - Police Killing in US in 201")
 
-I can see that State will be a easy way to join the threes table together.
+I can see that State will be a easy way to join the three tables together.
 
 ## Analytics
 
