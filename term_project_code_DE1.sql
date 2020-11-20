@@ -1,6 +1,6 @@
 -------------- Fall Assignement DE1 
 ----------- OPERATIONAL LAYER
--------- Import data from CSV files
+-------- Import data from txt files
 -- Import first txt file
 drop schema if exists term_project_police_killing_us;
 create	schema Term_project_Police_killing_us;
@@ -96,7 +96,7 @@ police_killing_us.date
 
 select date, date_formated from police_killing_us;
 
------------ ANALYTICS : Questions that coulb be answered thanks to this data:
+----------- ANALYTICS : Questions that could be answered thanks to this data:
 -------- Whether the context of the killing (race,state,etc) were random or if we can uncover some pattern?
 -------- Are more men kill than women?
 -------- Is there a sesaonality (month, week, holidays) with regards to increase killings?
@@ -197,9 +197,8 @@ where kills_id =1;
 
 
 
--------- DATA MART : I will creat some views to define sections of the datastore police_killing_us_data useful for the analysis
--- View 1 : Kills vs Gender
-use stored_police_killing_us;
+----------- DATA MART : I will creat some views to define sections of the datastore police_killing_us_data useful for the analysis
+-- View 1: Kills vs Gender
 drop view if exists Kills_vs_gender;
 create view Kills_vs_gender as
 select
@@ -213,8 +212,7 @@ group by kills_gender;
 
 select * from Kills_vs_gender;
 
--- View 2 : Kills vs race
-use stored_police_killing_us;
+-- View 2: Kills vs race
 drop view if exists Kills_vs_Race;
 create view Kills_vs_race as
 select race,
@@ -235,8 +233,7 @@ order by Total_kills desc;
 select * from Kills_vs_Race;
 
 
--- View 3 Kills vs Month
-use stored_police_killing_us;
+-- View 3: Kills vs Month
 drop view if exists Kills_vs_Month;
 create view Kills_vs_Month as
 select count(kills_id) as Total_kills, stored_police_killing_us.month
@@ -246,8 +243,7 @@ order by Total_kills desc;
 
 select * from Kills_vs_Month;
 
--- View 4 State_income vs rate_homicide
-use stored_police_killing_us;
+-- View 4: State_income vs rate_homicide
 drop view if exists state_income_vs_rate_homicide;
 create view state_income_vs_rate_homicide as
 select state, count(kills_id) as Total_kills, homicide_rate, 
@@ -265,8 +261,7 @@ group by state
 order by total_kills desc;
 
 select * from state_income_vs_rate_homicide;
---
-use stored_police_killing_us;
+-- View 5 : State_income vs rate_homicide vs gender
 drop view if exists state_income_vs_rate_homicide_vs_gender;
 create view state_income_vs_rate_homicide_vs_gender as
 select gender,count(kills_id) as Total_kills, state, homicide_rate, 
